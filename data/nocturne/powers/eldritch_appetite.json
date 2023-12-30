@@ -1,0 +1,57 @@
+{
+	"name": "Eldritch Appetite",
+	"description": "Your diet is as unnerving as you are. You can only eat spider eyes, rotten flesh, and raw meat. However, the nutrition of these foods is improved for you.",
+	"type": "origins:multiple",
+	"food": {
+		"type": "origins:prevent_item_use",
+		"item_condition": {
+			"type": "origins:and",
+			"conditions": [
+				{   
+					"type": "origins:ingredient",
+					"ingredient": {
+						"tag": "nocturne:food"
+					},
+					"inverted": true
+				},
+				{
+					"type": "origins:food"
+				}
+			]
+		}
+	},
+	"increased_saturation": {
+		"type": "origins:action_on_item_use",
+		"entity_action": {
+			"type": "origins:feed",
+			"food": 5.0,
+			"saturation": 5.0
+		},
+		"item_condition": {
+			"type": "origins:ingredient",
+			"ingredient": {
+				"tag": "nocturne:food"
+			}
+		}
+	},
+	"no_cake": {
+		"type": "origins:prevent_block_use",
+		"block_condition": {
+		  "type": "origins:block",
+		  "block": "minecraft:cake"
+		}
+	},
+    "sound": {
+        "type": "origins:action_on_item_use",
+        "entity_action": {
+            "type": "origins:execute_command",
+            "command": "function nocturne:sound_eat"
+        },
+		"item_condition": {
+			"type": "origins:ingredient",
+			"ingredient": {
+				"tag": "nocturne:food"
+			}
+		}
+    }
+}

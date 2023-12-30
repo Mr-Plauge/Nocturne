@@ -1,0 +1,21 @@
+{
+  "type": "origins:active_self",
+  "hidden": true,
+  "entity_action": {
+    "type": "origins:execute_command",
+    "command": "scoreboard players remove @s rotationX 9",
+    "permission_level": 4
+  },
+  "cooldown": 1,
+  "hud_render": {
+      "should_render": false
+  },
+  "key": {
+      "key": "key.left",
+      "continuous": true
+  },
+  "condition": {
+    "type": "origins:gamemode",
+    "gamemode": "spectator"
+  }
+}

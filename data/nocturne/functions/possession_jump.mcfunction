@@ -1,0 +1,2 @@
+execute store result score @s motionY run data get entity @e[sort=nearest,limit=1,tag=!possession_active,distance=0] OnGround 420
+execute if score @s motionY matches 420 run execute store result entity @e[sort=nearest,limit=1,tag=!possession_active,distance=0] Motion[1] double 0.001 run scoreboard players get @s motionY

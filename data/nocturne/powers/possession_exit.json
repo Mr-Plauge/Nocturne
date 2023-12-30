@@ -1,0 +1,213 @@
+{
+  "type": "origins:multiple",
+  "hidden": true,
+  "1": {
+    "type": "origins:active_self",
+    "entity_action": {
+      "type": "origins:execute_command",
+      "command": "function nocturne:possession_exit",
+      "permission_level": 4
+    },
+    "cooldown": 1,
+    "hud_render": {
+        "should_render": false
+    },
+    "key": {
+        "key": "key.hotbar.1"
+    },
+    "condition": {
+      "type": "origins:gamemode",
+      "gamemode": "spectator"
+    }
+  },
+  "2": {
+    "type": "origins:active_self",
+    "entity_action": {
+      "type": "origins:execute_command",
+      "command": "function nocturne:possession_exit",
+      "permission_level": 4
+    },
+    "cooldown": 1,
+    "hud_render": {
+        "should_render": false
+    },
+    "key": {
+        "key": "key.hotbar.2"
+    },
+    "condition": {
+      "type": "origins:gamemode",
+      "gamemode": "spectator"
+    }
+  },
+  "3": {
+    "type": "origins:active_self",
+    "entity_action": {
+      "type": "origins:execute_command",
+      "command": "function nocturne:possession_exit",
+      "permission_level": 4
+    },
+    "cooldown": 1,
+    "hud_render": {
+        "should_render": false
+    },
+    "key": {
+        "key": "key.hotbar.3"
+    },
+    "condition": {
+      "type": "origins:gamemode",
+      "gamemode": "spectator"
+    }
+  },
+  "4": {
+    "type": "origins:active_self",
+    "entity_action": {
+      "type": "origins:execute_command",
+      "command": "function nocturne:possession_exit",
+      "permission_level": 4
+    },
+    "cooldown": 1,
+    "hud_render": {
+        "should_render": false
+    },
+    "key": {
+        "key": "key.hotbar.4"
+    },
+    "condition": {
+      "type": "origins:gamemode",
+      "gamemode": "spectator"
+    }
+  },
+  "5": {
+    "type": "origins:active_self",
+    "entity_action": {
+      "type": "origins:execute_command",
+      "command": "function nocturne:possession_exit",
+      "permission_level": 4
+    },
+    "cooldown": 1,
+    "hud_render": {
+        "should_render": false
+    },
+    "key": {
+        "key": "key.hotbar.5"
+    },
+    "condition": {
+      "type": "origins:gamemode",
+      "gamemode": "spectator"
+    }
+  },
+  "6": {
+    "type": "origins:active_self",
+    "entity_action": {
+      "type": "origins:execute_command",
+      "command": "function nocturne:possession_exit",
+      "permission_level": 4
+    },
+    "cooldown": 1,
+    "hud_render": {
+        "should_render": false
+    },
+    "key": {
+        "key": "key.hotbar.6"
+    },
+    "condition": {
+      "type": "origins:gamemode",
+      "gamemode": "spectator"
+    }
+  },
+  "7": {
+    "type": "origins:active_self",
+    "entity_action": {
+      "type": "origins:execute_command",
+      "command": "function nocturne:possession_exit",
+      "permission_level": 4
+    },
+    "cooldown": 1,
+    "hud_render": {
+        "should_render": false
+    },
+    "key": {
+        "key": "key.hotbar.7"
+    },
+    "condition": {
+      "type": "origins:gamemode",
+      "gamemode": "spectator"
+    }
+  },
+  "8": {
+    "type": "origins:active_self",
+    "entity_action": {
+      "type": "origins:execute_command",
+      "command": "function nocturne:possession_exit",
+      "permission_level": 4
+    },
+    "cooldown": 1,
+    "hud_render": {
+        "should_render": false
+    },
+    "key": {
+        "key": "key.hotbar.8"
+    },
+    "condition": {
+      "type": "origins:gamemode",
+      "gamemode": "spectator"
+    }
+  },
+  "9": {
+    "type": "origins:active_self",
+    "entity_action": {
+      "type": "origins:execute_command",
+      "command": "function nocturne:possession_exit",
+      "permission_level": 4
+    },
+    "cooldown": 1,
+    "hud_render": {
+        "should_render": false
+    },
+    "key": {
+        "key": "key.hotbar.9"
+    },
+    "condition": {
+      "type": "origins:gamemode",
+      "gamemode": "spectator"
+    }
+  },
+  "attack": {
+    "type": "origins:active_self",
+    "entity_action": {
+      "type": "origins:execute_command",
+      "command": "function nocturne:possession_exit",
+      "permission_level": 4
+    },
+    "cooldown": 1,
+    "hud_render": {
+        "should_render": false
+    },
+    "key": {
+        "key": "key.attack"
+    },
+    "condition": {
+      "type": "origins:gamemode",
+      "gamemode": "spectator"
+    }
+  },
+  "use": {
+    "type": "origins:active_self",
+    "entity_action": {
+      "type": "origins:execute_command",
+      "command": "function nocturne:possession_exit",
+      "permission_level": 4
+    },
+    "cooldown": 1,
+    "hud_render": {
+        "should_render": false
+    },
+    "key": {
+        "key": "key.use"
+    },
+    "condition": {
+      "type": "origins:gamemode",
+      "gamemode": "spectator"
+    }
+  }
+}

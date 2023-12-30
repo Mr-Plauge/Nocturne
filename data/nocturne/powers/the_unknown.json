@@ -1,0 +1,38 @@
+{
+  "name": "The Unknown",
+  "description": "Your nametag is never visible. Invisibility potions are more effective, hiding your armor and held items.",
+  "type": "origins:multiple",
+	"nametag": {
+		"type": "origins:action_on_callback",
+		"entity_action_chosen": {
+			"type": "origins:execute_command",
+			"command": "team join Nocturne @s"
+		},
+		"entity_action_removed": {
+			"type": "origins:execute_command",
+			"command": "team leave @s"
+		},
+		"entity_action_added": {
+			"type": "origins:execute_command",
+			"command": "team join Nocturne @s"
+		},
+		"entity_action_respawned": {
+			"type": "origins:execute_command",
+			"command": "team join Nocturne @s"
+		},
+		"entity_action_lost": {
+			"type": "origins:execute_command",
+			"command": "team leave @s"
+		},
+		"execute_chosen_when_orb": true
+	},
+  "invisibility": {
+    "type": "origins:invisibility",
+    "render_armor": false,
+    "condition": {
+		"type": "origins:status_effect",
+		"effect": "minecraft:invisibility",
+		"min_amplifier": 0
+    }
+  }
+}

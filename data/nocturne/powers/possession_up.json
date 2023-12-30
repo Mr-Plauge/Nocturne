@@ -1,0 +1,20 @@
+{
+  "type": "origins:active_self",
+  "hidden": true,
+  "entity_action": {
+    "type": "origins:execute_command",
+    "command": "function nocturne:possession_up",
+    "permission_level": 4
+  },
+  "cooldown": 1,
+  "hud_render": {
+      "should_render": false
+  },
+  "key": {
+      "key": "key.drop"
+  },
+  "condition": {
+    "type": "origins:gamemode",
+    "gamemode": "spectator"
+  }
+}

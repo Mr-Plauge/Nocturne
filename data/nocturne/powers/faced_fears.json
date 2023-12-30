@@ -1,0 +1,69 @@
+{
+	"name": "Faced Fears",
+	"description": "You get beaten into a pulp by those that do not flee from you. You are smaller, your health and armor are reduced, and taking high damage stuns you.",
+    "type": "origins:multiple",
+    "attribute_modifiers": {
+        "type": "origins:attribute",
+        "modifiers": [
+            {
+                "attribute": "minecraft:generic.armor",
+                "value": -4,
+                "operation": "addition"
+            },
+            {
+                "attribute": "minecraft:generic.max_health",
+                "value": -6,
+                "operation": "addition"
+            }
+        ]
+    },
+    "stun": {
+        "type": "origins:self_action_when_hit",
+        "entity_action": {
+            "type": "origins:and",
+            "actions": [
+                {
+                    "type": "origins:apply_effect",
+                    "effects": [
+                        {
+                            "effect": "minecraft:slowness",
+                            "amplifier": 0,
+                            "duration": 40
+                        },
+                        {
+                            "effect": "minecraft:blindness",
+                            "amplifier": 0,
+                            "duration": 20
+                        }
+                    ]
+                },
+                {
+                    "type": "origins:execute_command",
+                    "command": "function nocturne:sound_stunned",
+                    "permission_level": 4
+                }
+            ]
+        },
+        "damage_condition": {
+            "type": "origins:amount",
+            "comparison": ">",
+            "compare_to": 5
+        },
+        "cooldown": 1
+    },
+    "scale": {
+        "type": "origins:action_on_callback",
+        "entity_action_added": {
+            "type": "origins:delay",
+            "ticks": 1,
+            "action": {
+                "type": "origins:execute_command",
+                "command": "function nocturne:scale"
+            }
+        },
+        "entity_action_lost": {
+            "type": "origins:execute_command",
+            "command": "scale reset @s"
+        }
+    }
+}

@@ -1,0 +1,10 @@
+{
+	"name": "Writhing Veins",
+	"description": "Your body is not natural. Poison, hunger, and nausea do not affect you.",
+	"type": "origins:effect_immunity",
+  "effects": [
+      "minecraft:poison",
+      "minecraft:hunger",
+      "minecraft:nausea"
+  ]
+}

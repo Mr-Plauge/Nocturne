@@ -1,0 +1,125 @@
+{
+	"name": "Crawling Chaos",
+	"description": "You move slightly faster, climb up walls, and crawl across ceilings.",
+	"type": "origins:multiple",
+	"movement": {
+		"type": "origins:attribute",
+		"modifier": {
+			"attribute": "minecraft:generic.movement_speed",
+			"operation": "addition",
+			"value": 0.01
+		}
+	},
+	"wall": {
+		"type": "origins:swimming",
+		"condition": {
+			"type": "origins:and",
+			"conditions": [
+				{
+					"type": "origins:or",
+					"conditions": [
+						{
+							"type": "origins:block_collision",
+							"offset_x": 0.1,
+							"offset_y": 0,
+							"offset_z": 0.1
+						},
+						{
+							"type": "origins:block_collision",
+							"offset_x": -0.1,
+							"offset_y": 0,
+							"offset_z": -0.1
+						}
+					]
+				}
+			]
+		}
+	},
+	"ceiling": {
+		"type": "origins:swimming",
+		"condition": {
+			"type": "origins:and",
+			"conditions": [
+				{
+					"type": "origins:block_collision",
+					"offset_x": 0,
+					"offset_y": 0.1,
+					"offset_z": 0
+				}
+			]
+		}
+	},
+	"land_swim_speed": {
+        "type": "origins:modify_swim_speed",
+        "modifier": {
+            "operation": "addition",
+            "value": -0.02
+        },
+        "condition": {
+            "type": "origins:in_block",
+			"block_condition": {
+				"type": "origins:block",
+				"block": "minecraft:water"
+			},
+			"inverted": true
+        }
+    },
+	"sound": {
+		"type": "origins:action_over_time",
+		"entity_action": {
+			"type": "origins:and",
+			"actions": [
+				{
+					"type": "origins:execute_command",
+					"command": "function nocturne:sound_crawl",
+					"permission_level": 4
+				},
+				{
+					"type": "origins:execute_command",
+					"command": "particle minecraft:dust -1 0.25 0.25 2 ~ ~ ~ 0.25 0.25 0.25 0 10",
+					"permission_level": 4
+				}
+			]
+		},
+		"interval": 5,
+		"condition": {
+			"type": "origins:and",
+			"conditions": [
+				{
+					"type": "origins:or",
+					"conditions": [
+						{
+							"type": "origins:block_collision",
+							"offset_x": 0.1,
+							"offset_y": 0,
+							"offset_z": 0.1
+						},
+						{
+							"type": "origins:block_collision",
+							"offset_x": -0.1,
+							"offset_y": 0,
+							"offset_z": -0.1
+						},
+						{
+							"type": "origins:block_collision",
+							"offset_x": 0,
+							"offset_y": 0.1,
+							"offset_z": 0
+						}
+					]
+				},
+				{
+                    "type": "origins:in_block",
+					"block_condition": {
+						"type": "origins:block",
+						"block": "minecraft:water"
+					},
+					"inverted": true
+				},
+				{
+					"type": "origins:swimming"
+				}
+			]
+		}
+	}
+}

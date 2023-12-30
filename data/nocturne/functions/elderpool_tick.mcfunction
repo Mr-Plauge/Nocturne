@@ -1,0 +1,9 @@
+execute positioned as @e[type=minecraft:area_effect_cloud,tag=elderpool] run effect give @e[distance=..2,nbt=!{cardinal_components:{"origins:origin":{OriginLayers:[{Origin:"nocturne:nocturne"}]}}}] minecraft:blindness 3 0
+execute positioned as @e[type=minecraft:area_effect_cloud,tag=elderpool] run effect give @e[distance=..2,nbt=!{cardinal_components:{"origins:origin":{OriginLayers:[{Origin:"nocturne:nocturne"}]}}}] minecraft:slowness 3 1
+execute positioned as @e[type=minecraft:area_effect_cloud,tag=elderpool] run effect give @e[distance=..2,nbt=!{cardinal_components:{"origins:origin":{OriginLayers:[{Origin:"nocturne:nocturne"}]}}}] minecraft:wither 3 50
+execute positioned as @e[type=minecraft:area_effect_cloud,tag=elderpool] run playsound minecraft:block.honey_block.slide player @a ~ ~ ~ 0.5 0.1
+
+execute positioned as @e[type=minecraft:area_effect_cloud,tag=big_elderpool] run effect give @e[distance=..6,nbt=!{cardinal_components:{"origins:origin":{OriginLayers:[{Origin:"nocturne:nocturne"}]}}}] minecraft:blindness 7 0
+execute positioned as @e[type=minecraft:area_effect_cloud,tag=big_elderpool] run effect give @e[distance=..6,nbt=!{cardinal_components:{"origins:origin":{OriginLayers:[{Origin:"nocturne:nocturne"}]}}}] minecraft:slowness 7 1
+execute positioned as @e[type=minecraft:area_effect_cloud,tag=big_elderpool] run effect give @e[distance=..6,nbt=!{cardinal_components:{"origins:origin":{OriginLayers:[{Origin:"nocturne:nocturne"}]}}}] minecraft:wither 7 50
+execute positioned as @e[type=minecraft:area_effect_cloud,tag=big_elderpool] run playsound minecraft:block.honey_block.slide player @a ~ ~ ~ 0.5 0.1

@@ -1,0 +1,24 @@
+{
+    "type": "origins:particle",
+    "hidden": true,
+    "particle": {
+        "type": "minecraft:dust",
+        "params": "-1 0.25 0.25 2"
+    },
+    "frequency": 4,
+    "condition": {
+        "type": "origins:or",
+        "conditions": [
+            {
+                "type": "origins:gamemode",
+                "gamemode": "spectator",
+                "inverted": true
+            },
+            {
+                "type": "origins:status_effect",
+                "effect": "minecraft:invisibility",
+                "min_amplifier": 0
+            }
+        ]
+    }
+}

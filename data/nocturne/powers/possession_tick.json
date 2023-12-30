@@ -1,0 +1,14 @@
+{
+  "type": "origins:action_over_time",
+  "hidden": true,
+  "entity_action": {
+    "type": "origins:execute_command",
+    "command": "function nocturne:possession_tick",
+    "permission_level": 4
+  },
+  "interval": 1,
+  "condition": {
+    "type": "origins:gamemode",
+    "gamemode": "spectator"
+  }
+}

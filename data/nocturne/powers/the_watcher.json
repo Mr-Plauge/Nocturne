@@ -1,0 +1,17 @@
+{
+  "name": "The Watcher",
+  "description": "You can sense the presence of nearby entities, which are manifested as glowing outlines.",
+  "type": "origins:multiple",
+  "generic": {
+    "type": "origins:entity_glow",
+    "use_teams": false,
+    "red": 0.75,
+    "green": 0.25,
+    "blue": 0.25,
+    "condition": {
+      "type": "origins:gamemode",
+      "gamemode": "spectator",
+      "inverted": true
+    }
+  }
+}

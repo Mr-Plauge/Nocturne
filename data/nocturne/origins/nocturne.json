@@ -1,0 +1,31 @@
+{
+  "icon": "minecraft:black_glazed_terracotta",
+  "order": 0,
+  "impact": 3,
+  "name": "Nocturne",
+  "description": "Born from fear and eldritch incomprehension, Nocturnes have a talent for getting into the minds of others.",
+  "powers": [
+    "nocturne:possession",
+    "nocturne:elderpool",
+    "nocturne:crawling_chaos",
+    "nocturne:the_watcher",
+    "nocturne:the_unknown",
+    "nocturne:ancient_dread",
+    "nocturne:writhing_veins",
+    "nocturne:eldritch_appetite",
+    "nocturne:faced_fears",
+    "nocturne:possession_up",
+    "nocturne:possession_down",
+    "nocturne:possession_left",
+    "nocturne:possession_right",
+    "nocturne:possession_forward",
+    "nocturne:possession_sprint",
+    "nocturne:possession_jump",
+    "nocturne:possession_swim",
+    "nocturne:possession_tick",
+    "nocturne:possession_exit",
+    "nocturne:init",
+    "nocturne:sounds",
+    "nocturne:particle"
+  ]
+}
